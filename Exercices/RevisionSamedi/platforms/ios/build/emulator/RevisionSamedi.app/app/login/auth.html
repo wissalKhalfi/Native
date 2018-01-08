@@ -1,0 +1,11 @@
+<StackLayout>
+
+  <Image src="~/images/Logo_ESPRIT.png" stretch="none" horizontalAlignment="center">  </Image>
+  <TextField hint="Email Address" keyboardType="email"
+    autocorrect="false" autocapitalizationType="none"
+    [(ngModel)]="userLog.email"></TextField>
+  <TextField hint="Password" secure="true" [(ngModel)]="userLog.password"></TextField>
+  <Button text="Sign in" class="submit-button" (tap)="AuthUser()"></Button>
+  <Button text="Sign up for tunisia airport app " class="submit-button-n" (tap)="RegisterP()">
+  </Button>
+</StackLayout>

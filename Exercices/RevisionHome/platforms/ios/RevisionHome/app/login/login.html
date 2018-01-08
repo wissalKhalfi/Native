@@ -1,0 +1,17 @@
+<StackLayout>
+
+  <Image src="~/images/Applogo.png" stretch="none" horizontalAlignment="center"> </Image>
+
+  <TextField hint="Email Address" keyboardType="email"
+    autocorrect="false" autocapitalizationType="none"
+    [(ngModel)]="user.email"></TextField>
+
+
+  <TextField hint="Password" secure="true" [(ngModel)]="user.password"></TextField>
+
+
+
+  <Button text="Sign in" class="submit-button" (tap)="Login()"></Button>
+
+  <Button text="Sign up for TODO List " class="submit-button-n"></Button>
+</StackLayout>

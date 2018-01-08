@@ -1,0 +1,23 @@
+<ActionBar title="My flights">
+  <NavigationButton text="Back">
+  </NavigationButton>
+</ActionBar>
+<StackLayout>
+<StackLayout>
+<TextField  hint="titre" [(ngModel)]="vol.titre" ></TextField>
+<TextField  hint="etat" [(ngModel)]="vol.etat" ></TextField>
+<TextField  hint="date" [(ngModel)]="vol.date" ></TextField>
+
+<button text="ADD flight .." (tap)="ajouterFlight()" ></button>
+
+</StackLayout>
+<StackLayout>
+<ListView [items]="flightsList" >
+   <template let-item="item">
+     <Label text="Hello {{item.titre}}" class="title"></Label>
+   </template>
+ </ListView>
+</StackLayout>
+<button text="delete all" (tap)="deleteAll()"></button>
+<TextField hint="search" ></TextField>
+</StackLayout>

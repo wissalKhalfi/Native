@@ -1,0 +1,37 @@
+StackLayout {
+  margin-left: 30;
+  margin-right: 30;
+  padding-top: 50;
+  padding-bottom: 15;
+  background-color: white;
+}
+Image {
+  margin-top: 5;
+  margin-bottom: 40;
+
+
+}
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360); }
+}
+Image {
+  animation-name: spin; animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+Button, TextField {
+  margin-left: 16;
+  margin-right: 16;
+  margin-bottom: 10;
+}
+.submit-button {
+  background-color: #CB1D00;
+  color: white;
+  margin-top: 20;
+}
+.submit-button-n {
+  background-color: #CB1DB0;
+  color: white;
+  margin-top: 10;
+}

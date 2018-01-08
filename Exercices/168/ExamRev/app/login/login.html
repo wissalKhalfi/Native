@@ -1,0 +1,7 @@
+<StackLayout>
+<Image src="~/images/logo_user.png" width="150"></Image>
+ <TextField  hint="name" [(ngModel)]="user.name" ></TextField>
+ <TextField secure="true" hint="password" [(ngModel)]="user.password" class="submit-button"></TextField>
+ <button text="Sign in" (tap)="connect()" class="submit-button-n"></button>
+ <button text="Sign Up"></button>
+ </StackLayout>s

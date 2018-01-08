@@ -1,0 +1,35 @@
+TextField {
+  padding: 10;
+  font-size: 13;
+}
+
+Button
+{
+	color:white;
+	background-color: red;
+}
+
+
+Button, TextField {
+
+  margin-bottom: 10;
+}
+
+
+
+StackLayout {
+  margin-left: 30;
+  margin-right: 30;
+  padding-top: 50;
+  padding-bottom: 15;
+  background-color: white;
+}
+
+@keyframes spin {
+      from { transform: rotate(0); } to { transform: rotate(360); }
+    }
+    Image {
+      animation-name: spin; animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }

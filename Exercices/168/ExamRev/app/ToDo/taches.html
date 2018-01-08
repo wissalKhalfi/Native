@@ -1,0 +1,38 @@
+
+<StackLayout>
+<LABEL text="Welcome {{userName}}">
+</LABEL>
+
+
+
+<StackLayout>
+<TextField  hint="titre" [(ngModel)]="tache.titre" ></TextField>
+<TextField  hint="description" [(ngModel)]="tache.description" ></TextField>
+
+
+<button text="ADD" (tap)="addTask()" ></button>
+
+</StackLayout>
+<StackLayout>
+<ListView [items]="tasksList" >
+   <template let-item="item">
+   <WrapLayout>
+   <Label [text]="item.titre" [nsRouterLink]="['/detail',item.id]">
+   	
+   </Label>
+   <Image src="~/images/delete.png" ></Image>
+
+   </WrapLayout>
+   </template>
+
+ </ListView>
+
+
+
+
+</StackLayout>
+<button text="delete all" (tap)="deleteAll()"></button>
+<TextField hint="search" ></TextField>
+</StackLayout>
+
+
